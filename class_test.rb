@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'lib/server2.rb'
+require_relative 'lib/server.rb'
 
 class ClassTest < MiniTest::Test
 
