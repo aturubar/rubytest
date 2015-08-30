@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative '../lib/container'
+require_relative 'lib/container'
 
 class R530 < Server
   memory_slots 16, :ddr4
