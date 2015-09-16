@@ -44,7 +44,6 @@ class CpuWrapper
     @cpu_list.size
   end
   def << obj
-  #  puts "Size before add: #{@cpu_list.size} and spec is: #{@spec}"
     raise InvalidConfiguration, 'Provide valid CPU object' if !(obj.is_a? CPU)
     raise InvalidConfiguration, 'No more sockets left' if @cpu_list.size == @spec[:count]
     raise InvalidConfiguration, 'Unsupported CPU type' if obj.unit[:core_type] != @spec[:type]
